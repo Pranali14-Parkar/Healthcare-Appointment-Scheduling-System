@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Registration.css">
+    <!-- <script src="C:\\Users\\wagisha.raj\\OneDrive - Parkar Digital\\HealthcareAppointmentScheduling\\app\\auth\\static\\Registration.js"></script> -->
+</head>
+<body>
+    <div class="wrapper">
+        <center>
+            <h2>Registration</h2>
+        </center>
+        <form id="registrationForm" action="http://127.0.0.1:5000/register" method="POST">
+            <div class="form-group">
+                <label>Select Role:</label><br>
+                <input type="radio" id="user" name="role" value="3" onclick="enableFields()"> 
+                <label for="user">Patient</label><br>
+                <input type="radio" id="doctor" name="role" value="2" onclick="disableFields()"> 
+                <label for="doctor">Doctor</label><br>
+                <input type="radio" id="admin" name="role" value="1"  onclick="disableFields()"> 
+                <label for="admin">Admin</label><br><br>
+            </div>
+            <div class="input-box">
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" name="pwd" placeholder="Create password" required>
+            </div>
+            <div class="input-box">
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required>
+            </div>
+            <div class="form-group">
+                <div class="input-box">
+                    <label for="bloodGroup">Enter Blood Group:</label>
+                    <select id="bloodGroup" name="bloodGroup">
+                        <option value="Unknown"></option>
+                        <option value="Unknown">Unknown</option>
+                        <option value="APositive">A Positive</option>
+                        <option value="ANegative">A Negative</option>
+                        <option value="AUnknown">A Unknown</option>
+                        <option value="BPositive">B Positive</option>
+                        <option value="BNegative">B Negative</option>
+                        <option value="BUnknown">B Unknown</option>
+                        <option value="ABPositive">AB Positive</option>
+                        <option value="ABNegative">AB Negative</option>
+                        <option value="ABUnknown">AB Unknown</option>
+                        <option value="OPositive">O Positive</option>
+                        <option value="ONegative">O Negative</option>
+                        <option value="OUnknown">O Unknown</option>                       
+                    </select>
+                </div>
+                
+                <div class="input-box">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" placeholder="Select Gender" required>
+                        <option value="Unknown"></option>
+                        <option value="Unknown">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+            
+                <div class="input-box">
+                    <input type="number" id="age"  name="age" placeholder="Enter your Age" required>
+                </div>
+
+                <div class="input-box">
+                    <!-- <label for="phoneNumber">Enter Contact number:</label> -->
+                    <!-- <div class="input-group"> -->
+                        <!-- <select id="countryCode" name="countryCode">
+                            <option value="+1">+1 (United States)</option>
+                            <option value="+91" selected>+91 (India)</option>
+                            Add more options as needed -->
+                        <!-- </select> -->
+                        <input type="text" id="phoneNumber" name="ph_no" placeholder="Enter the Conatct number" required>
+                    <!-- </div> -->
+                </div>
+                
+                
+            </div>
+            <div class="input-box">
+                <!-- <input type="number" id="phoneNumber" placeholder="Enter Contact number" required> -->
+                <input type="text" id="address" name="addr" placeholder="Enter the address" required>
+
+            </div>
+            <div class="policy">
+                <input type="checkbox" id="termsCondition">
+                <label for="termsCondition">I accept all terms & condition</label>
+            </div>
+            <div class="button-container">
+                <button type="submit" id="submit">Register Now</button>
+            </div>
+            <div class="text">
+                <h3>Already have an account? <a href="#">Login now</a></h3>
+            </div>
+        </form>
+    </div>
+    <script src="js/Registration.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>

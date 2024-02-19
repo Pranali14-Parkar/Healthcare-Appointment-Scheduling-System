@@ -1,0 +1,191 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 160vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #4070f4;
+    padding: 0 20px;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 690px;
+    width: 100%;
+    background: #f6f6f6;
+    padding: 34px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper h2 {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.wrapper h2::before {
+    content: '';
+    position: absolute;
+    left: 1; /* Fixed: Changed from 1 to 0 */
+    bottom: 0;
+    height: 3px;
+    width: 28px;
+    border-radius: 12px;
+    background: #4070f4;
+}
+
+.wrapper form {
+    margin-top: 30px;
+}
+
+.wrapper form .input-box {
+    height: 40px;
+    margin: 18px 0;
+}
+
+form .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 17px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    border: 1.5px solid #c5c4c4;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+    border-color: #4070f4;
+}
+
+form .policy {
+    display: flex;
+    align-items: center;
+}
+
+form h3 {
+    color: #707070;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.input-box.button input {
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    background: #4070f4;
+    cursor: pointer;
+}
+
+.input-box.button input:hover {
+    background: #0e4bf1;
+}
+
+form .input-box input-box:disabled {
+    color: #5d2e2e; /* Change the color to your desired disabled color */
+}
+
+form .text h3 {
+    color: #333;
+    width: 100%;
+    text-align: center;
+}
+
+form .text h3 a {
+    color: #4070f4;
+    text-decoration: none;
+}
+
+form .text h3 a:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    color: #707070;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-group select {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    border: 1.5px solid #C7BEBE;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.form-group .input-box {
+    width: 45%; /* Adjusted width for two input boxes in a row */
+}
+
+/* Add styles for buttons */
+.button-container {
+    text-align: center;
+}
+
+.button-container button {
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    background: #4070f4;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.button-container button:hover {
+    background: #0e4bf1;
+}
+
+
+
+
+.form-group .input-box input:disabled,
+.form-group select:disabled,
+.input-box.button input:disabled {
+    background-color: #f0f0f0; /* Change the background color of disabled fields */
+    color: #a0a0a0; /* Change the text color of disabled fields */
+    border-color: #d0d0d0; /* Change the border color of disabled fields */
+    cursor: not-allowed; /* Change the cursor style for disabled fields */
+}
+
+.form-group .input-box input:disabled::placeholder {
+    color: #a0a0a0; /* Change the placeholder text color of disabled input fields */
+}
+
+
+
+
+ /* //----------------------------------------------------- */
+
+
